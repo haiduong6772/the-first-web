@@ -1,0 +1,101 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+}
+.fixed {
+  position: sticky;
+  top: -28px;
+}
+.header .body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 36px 0 8px;
+}
+a {
+  text-decoration: none;
+}
+.nav {
+  width: 359px;
+  height: 28px;
+  /* dàn các thẻ a trong nav */
+  display: flex;
+  justify-content: center;
+}
+.nav ul {
+  display: flex;
+}
+.nav {
+  display: flex;
+  margin-left: auto;
+  position: relative;
+}
+.nav a {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 21px;
+  padding-right: 21px;
+  font-size: 1.6rem;
+  color: #5f5b53;
+  font-size: "Poppins";
+}
+/* code cho phan chung o ngoai */
+.main-content {
+  width: 1170px;
+  max-width: calc(100% - 48px);
+  margin-left: auto;
+  margin-right: auto;
+}
+/* làm phần gạch chân dưới mỗi menu */
+.nav .active::after {
+  content: "";
+  display: inline-block;
+  width: 1.2rem;
+  height: 0.1rem;
+  background-color: black;
+  border-radius: 2px;
+  position: absolute;
+  left: 1.1rem;
+}
+.nav .active,
+.nav a:hover {
+  color: black;
+  text-shadow: 0px 0px 0px black;
+}
+/* buttom */
+.action {
+  display: flex;
+  min-width: 144px;
+  height: 50px;
+  background-color: #171100;
+  border-radius: 24.5px;
+  align-items: center;
+  justify-content: center;
+  margin-left: 4.2rem;
+}
+.action a {
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 1.6rem;
+  padding: 15px;
+}
+/* code phần hero */
+.main {
+  margin-top: 5rem;
+}
+/* code phần ảnh */
+.picture-hero {
+  position: relative;
+}
+.small-picture {
+  position: absolute;
+  top: 350px;
+  left: 250px;
+}
+/* code phần chữ */
