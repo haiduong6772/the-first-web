@@ -304,6 +304,7 @@ a {
   transition: 0.3s;
 }
 /* ==================popular botton================= */
+
 .popular-botton {
   display: flex;
   gap: 3rem;
@@ -379,4 +380,180 @@ a {
 .card:hover {
   box-shadow: 0 18px 40px 0 rgba(0, 0, 0, 0.4);
   transition: 0.3s;
+}
+/* =======================Phần lời nói=================================================== */
+.name {
+  display: -webkit-box;
+  -webkit-line-clamp: var(--hidden-line, 1);
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  word-break: break-all;
+}
+.name.intro {
+  --hidden-line: 2;
+  word-break: break-all;
+}
+.presentation {
+  padding: 96px 0;
+  background-color: #2e2100;
+  margin-top: 20rem;
+}
+.presentation-content {
+  display: flex;
+  justify-content: space-between;
+}
+.avatar-img {
+  width: 72px;
+  height: 72px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.avatar h2 {
+  font-family: var(--fonts);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 34px;
+  color: #f7f7f7;
+}
+.avatar p {
+  width: 15.9rem;
+  font-size: 14px;
+  line-height: 26px;
+  font-family: var(--fontp);
+  color: #fff;
+}
+.lecture {
+  width: 77rem;
+  height: 18.8rem;
+}
+.lecture p {
+  font-family: var(--fontp);
+  font-size: 26px;
+  font-style: italic;
+  line-height: 40px;
+  color: #ffffff;
+  margin-left: 3rem;
+}
+
+.dots {
+  display: flex;
+  width: 3rem;
+  height: 0.6rem;
+  margin-top: 2.8rem;
+  justify-content: space-between;
+}
+.dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #634700;
+}
+.dot.dot-hight-line {
+  background-color: #ffb900;
+}
+/* ======================================features================================================== */
+.features {
+  margin-top: 13.5rem;
+  padding: 65px 0;
+}
+.features .body {
+  display: flex;
+  width: 117rem;
+  height: 43.8rem;
+  justify-content: space-between;
+}
+.element1 {
+  display: flex;
+  gap: 3rem;
+}
+.element1 img {
+  width: 27rem;
+  height: 40.4rem;
+  border-radius: 16px;
+}
+.element1 img:first-child {
+  align-self: flex-end;
+}
+.features .element2 {
+  width: 41%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.features .element2 h2 {
+  font-family: var(--fonts);
+  font-weight: 700;
+  font-size: 3.5rem;
+  line-height: 4.8rem;
+  letter-spacing: -2%;
+}
+.features .element2 p {
+  font-family: var(--fontp);
+  font-size: 16px;
+  line-height: 2.8rem;
+  margin-top: 16px;
+  color: #5f5b53;
+}
+.features .element2 button {
+  width: 11.8rem;
+  height: 5rem;
+  background-color: #ffb900;
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 26px;
+  font-family: var(--fontp);
+  border-radius: 25px;
+  border: none;
+  margin-top: 3rem;
+}
+/* ====================================================CTA=========================================================== */
+.CTA {
+  padding: 3rem 0;
+  margin-top: 10.5rem;
+}
+.CTA .body {
+  display: flex;
+  justify-content: space-between;
+  width: 117rem;
+}
+.CTA .body .CTA-element1 {
+  width: 49%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.CTA .body .CTA-element1 h2 {
+  font-family: var(--fonts);
+  font-weight: 700;
+  font-size: 3.8rem;
+  line-height: 4.8rem;
+  letter-spacing: -2%;
+  color: #171100;
+}
+.CTA .body .CTA-element1 p {
+  font-family: var(--fontp);
+  font-size: 1.6rem;
+  line-height: 2.8rem;
+  color: #5f5b53;
+  margin-top: 1.6rem;
+}
+.CTA .body .CTA-element1 button {
+  width: 13.7rem;
+  height: 5rem;
+  border: none;
+  border-radius: 26px;
+  background-color: #ffb900;
+  font-family: var(--fontp);
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 2.8rem;
+  color: #ffffff;
+  margin-top: 4.4rem;
+}
+.CTA .body img {
+  width: 40%;
+  height: 44rem;
+  object-fit: cover;
+  border-radius: 20px;
 }
