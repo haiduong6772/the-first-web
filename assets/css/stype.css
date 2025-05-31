@@ -382,6 +382,10 @@ a {
   transition: 0.3s;
 }
 /* =======================Phần lời nói=================================================== */
+.presentation {
+  background-color: #2e2100;
+  padding: 9.6rem 0;
+}
 .name {
   display: -webkit-box;
   -webkit-line-clamp: var(--hidden-line, 1);
@@ -393,48 +397,33 @@ a {
   --hidden-line: 2;
   word-break: break-all;
 }
-.presentation {
-  padding: 96px 0;
-  background-color: #2e2100;
-  margin-top: 20rem;
+.feedback {
+  display: flex;
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.avatar img {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.presentation .lecture {
+  width: 66%;
+  margin-left: auto;
+}
+.feedback .lecture p {
+  font-family: var(--fontp);
+  font-style: italic;
+  font-size: 2.6rem;
+  line-height: 4rem;
+  color: #ffffff;
 }
 .presentation-content {
   display: flex;
-  justify-content: space-between;
+  overflow: hidden;
 }
-.avatar-img {
-  width: 72px;
-  height: 72px;
-  object-fit: cover;
-  border-radius: 50%;
-}
-.avatar h2 {
-  font-family: var(--fonts);
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 34px;
-  color: #f7f7f7;
-}
-.avatar p {
-  width: 15.9rem;
-  font-size: 14px;
-  line-height: 26px;
-  font-family: var(--fontp);
-  color: #fff;
-}
-.lecture {
-  width: 77rem;
-  height: 18.8rem;
-}
-.lecture p {
-  font-family: var(--fontp);
-  font-size: 26px;
-  font-style: italic;
-  line-height: 40px;
-  color: #ffffff;
-  margin-left: 3rem;
-}
-
 .dots {
   display: flex;
   width: 3rem;
@@ -556,4 +545,249 @@ a {
   height: 44rem;
   object-fit: cover;
   border-radius: 20px;
+}
+/* ===============================blog================================================= */
+.blog {
+  margin-top: 20rem;
+  padding: 9.6rem 0;
+  background-color: #fffcf4;
+}
+.blog-bottom {
+  padding: 2rem 2rem;
+}
+.blog-item1 {
+  width: 44.8rem;
+  height: 12rem;
+}
+.blog-item-top {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+.blog-item-top .blog-item1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+}
+.blog-item-top .blog-item1 h1 {
+  font-family: var(--fonts);
+  font-weight: 700;
+  font-size: 3.8rem;
+  line-height: 4.8rem;
+  letter-spacing: -2%;
+}
+.blog-item-top .blog-item1 p {
+  font-family: var(--fontp);
+  font-size: 1.6rem;
+  line-height: 2.8rem;
+  color: #696262;
+}
+.blog-item2 {
+  margin-top: 3.1rem;
+  padding: 1rem 0;
+  display: flex;
+  gap: 3rem;
+}
+.blog-item2 .blogcard img {
+  width: 37rem;
+  height: 25rem;
+  border-radius: 1.6rem 1.6rem 0 0;
+  object-fit: cover;
+}
+.blogcard {
+  width: 37rem;
+  border-radius: 28px;
+  box-shadow: 0 18px 36px rgba(0, 0, 0, 0.1);
+  flex-grow: 1;
+}
+.blogcard:hover {
+  box-shadow: 0 18px 36px rgba(0, 0, 0, 0.4);
+  transition: 0.5s;
+}
+.schedule p {
+  color: #5f5b53;
+  font-family: var(--fontp);
+  font-size: 1.4rem;
+  line-height: 2.6rem;
+}
+.schedule p::before {
+  content: "";
+  display: inline-block;
+  width: 0.6rem;
+  height: 0.6rem;
+  border-radius: 50%;
+  background-color: #ffb900;
+  margin-right: 0.5rem;
+  margin-bottom: 0.1rem;
+}
+.blog-item2 .blog-bottom {
+  padding: 1.6rem 1.6rem;
+}
+.schedule {
+  height: 3rem;
+  width: 16rem;
+  border-bottom: 1px solid #e2dfda;
+}
+.blog-bottom p {
+  font-family: var(--fontp);
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 2.8rem;
+}
+#p-in-blog-button {
+  margin: 1rem 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.blog-bottom button {
+  width: 11.8rem;
+  height: 5rem;
+  border: none;
+  border-radius: 26px;
+  background-color: #171100;
+  font-family: var(--fontp);
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 2.8rem;
+  color: #ffffff;
+  margin-top: 0.9rem;
+}
+.blog-bottom button:hover {
+  background-color: #ffb900;
+  transition: 0.3s;
+}
+.blog-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 3.8rem;
+}
+.blog-dots .in {
+  display: flex;
+  width: 3rem;
+  height: 0.6rem;
+  justify-content: space-between;
+}
+/* ====================================================footer============================================================ */
+.footer {
+  padding-top: 9.6rem;
+  padding-bottom: 2.8rem;
+  background-color: #2e2100;
+}
+.body-footer {
+  display: flex;
+  justify-content: space-between;
+}
+#p-in-footer {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding-top: 6.7rem;
+  font-family: var(--fontp);
+  font-size: 1.4rem;
+  line-height: 2.6rem;
+  color: #807d74;
+}
+#p-in-footer::after {
+  content: "";
+  display: inline-block;
+  width: 117rem;
+  height: 0px;
+  border: 1px solid #59554b;
+  position: absolute;
+  top: 3.8rem;
+}
+.footer-item1 {
+  width: 26.7rem;
+}
+.footer-item1 h2 {
+  font-family: var(--fonts);
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 3.4rem;
+  color: #ffffff;
+}
+.footer-item1 h2::after {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #ffb900;
+}
+.footer-item1 p {
+  padding: 1.8rem 0;
+  font-family: var(--fontp);
+  font-size: 1.4rem;
+  line-height: 2.6rem;
+  color: #bfbcb2;
+}
+.footer-item1 .icon {
+  width: 11.1rem;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+}
+.body-footer h2 {
+  color: #ffffff;
+  font-family: var(--fontp);
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 2.8rem;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+}
+.body-footer h2::after {
+  content: "";
+  display: inline-block;
+  width: 13rem;
+  height: 0rem;
+  border: 1px solid #59554b;
+  position: absolute;
+  top: 4.2rem;
+}
+.body-footer .footer-info p {
+  font-family: var(--fontp);
+  font-size: 1.4rem;
+  line-height: 2.6rem;
+  color: #bfbcb2;
+}
+.footer-item2 .footer-info,
+.footer-item3 .footer-info {
+  display: flex;
+  flex-direction: column;
+  height: 14.1rem;
+  justify-content: space-between;
+}
+.footer-item2,
+.footer-item3 {
+  display: flex;
+  height: 21.1rem;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.Address {
+  width: 23.2rem;
+  height: 19.9rem;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.Address .footer-info {
+  height: 13.3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.Address .footer-info span {
+  font-family: var(--fontp);
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 2.8rem;
+  color: #ffffff;
 }
